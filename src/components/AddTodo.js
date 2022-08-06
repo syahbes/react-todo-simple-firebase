@@ -26,11 +26,8 @@ export default function AddTodo() {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 />                
+                <button>Add</button>           
             </div>
-            <div className="btn_container">
-                <button>Add</button>
-            </div>
-
         </form>
     )
 }
