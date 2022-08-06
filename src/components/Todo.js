@@ -32,23 +32,23 @@ export default function Todo({
             />
             <div className="action-btn-container">
                 <button
-                    className="button-complete"
-                    onClick={() => toggleComplete(todo)}
-                >
-                    <CheckCircleIcon id="1" />
-                </button>
-                <button
-                    className="button-edit"
-                    onClick={() => handleEdit(todo, newTitle)}
-                >
-                    <EditIcon id="1" />
-                </button>
-                <button
                     className="button-delete"
                     onClick={() => handleDelete(todo.id)}
                 >
                     <DeleteIcon id="1" />
                 </button>
+                <button
+                    className="button-complete"
+                    onClick={() => toggleComplete(todo)}
+                >
+                    <CheckCircleIcon id="1" />
+                </button>
+                {/* <button
+                    className="button-edit"
+                    onClick={() => handleEdit(todo, newTitle)}
+                >
+                    <EditIcon id="1" />
+                </button> */}
             </div>
 
         </div>
