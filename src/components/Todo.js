@@ -32,6 +32,13 @@ export default function Todo({
             />
             <div className="action-btn-container">
                 <button
+                    className="button-edit"
+                    onClick={() => handleEdit(todo, newTitle)}
+                >
+                    <EditIcon id="1" />
+                </button>
+                               
+                <button
                     className="button-delete"
                     onClick={() => handleDelete(todo.id)}
                 >
@@ -43,12 +50,7 @@ export default function Todo({
                 >
                     <CheckCircleIcon id="1" />
                 </button>
-                <button
-                    className="button-edit"
-                    onClick={() => handleEdit(todo, newTitle)}
-                >
-                    <EditIcon id="1" />
-                </button>
+                
             </div>
 
         </div>
