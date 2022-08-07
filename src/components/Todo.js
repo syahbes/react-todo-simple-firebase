@@ -43,12 +43,12 @@ export default function Todo({
                 >
                     <CheckCircleIcon id="1" />
                 </button>
-                {/* <button
+                <button
                     className="button-edit"
                     onClick={() => handleEdit(todo, newTitle)}
                 >
                     <EditIcon id="1" />
-                </button> */}
+                </button>
             </div>
 
         </div>
